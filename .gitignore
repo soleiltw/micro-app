@@ -21,3 +21,7 @@ gcp-service-account-key.json
 
 .vscode
 apidoc
+
+**/dev.ini
+**/staging.ini
+**/prod.ini
