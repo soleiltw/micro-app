@@ -1,0 +1,4 @@
+bottle==0.12.17
+gevent==1.4.0
+gunicorn==19.9.0
+requests==2.22.0
