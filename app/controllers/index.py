@@ -7,12 +7,38 @@ from bottle import post, request, get
 
 @get('/')
 def index():
+    """
+    @api {get} / Easy check
+    @apiName Easy for health check.
+    @apiGroup Healthy
+    @apiVersion 1.0.0
+
+    @apiSuccessExample {json} Success-Response:
+    HTTP/1.1 200 OK
+    Content-Length: 0
+    Content-Type: text/html; charset=UTF-8
+    Date: Mon, 16 Sep 2019 09:32:46 GMT
+    Server: gunicorn/19.9.0
+    """
     logging.debug('Healthy check.')
     pass  # healthy check
 
 
 @get('/healthy')
 def index():
+    """
+    @api {get} /healthy Another easy check
+    @apiName A path for another health check.
+    @apiGroup Healthy
+    @apiVersion 1.0.0
+
+    @apiSuccessExample {json} Success-Response:
+    HTTP/1.1 200 OK
+    Content-Length: 0
+    Content-Type: text/html; charset=UTF-8
+    Date: Mon, 16 Sep 2019 09:32:46 GMT
+    Server: gunicorn/19.9.0
+    """
     logging.debug('Healthy check.')
     pass  # healthy check
 

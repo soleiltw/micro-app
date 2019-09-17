@@ -45,7 +45,7 @@ def loop():
                 try:
                     message = json.loads(message)
                 except JSONDecodeError:
-                    logging.info('invalid json: %s', message)
+                    logging.error('invalid json: %s', message)
                     delete_message(client, query_url, receipt_handle)
                     continue
 
