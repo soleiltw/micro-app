@@ -5,6 +5,7 @@ from importlib import import_module
 
 import sys
 
+from app import db
 from app.error import register_error_handler
 from app.utils import env_detect
 
@@ -66,6 +67,7 @@ def set_logger():
 def init_app():
     load_config()
     set_logger()
+    db.init()
     load_controllers()
     register_error_handler()
     logging.debug('Init app finished.')
