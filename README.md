@@ -1,4 +1,5 @@
 # Micro-App
+Instead using python run, build the docker image and run as docker container.
 ## Micro-App(API)
 
 Include health check API.

@@ -6,3 +6,4 @@ boto3==1.17.39
 schedule==0.6.0
 peewee==3.10.0
 PyMySQL==0.9.3
+codeguru_profiler_agent==1.0.6
